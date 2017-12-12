@@ -1,3 +1,14 @@
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById('mySidebar').style.display = 'block';
+    document.getElementById('myOverlay').style.display = 'block';
+}
+
+function w3_close() {
+    document.getElementById('mySidebar').style.display = 'none';
+    document.getElementById('myOverlay').style.display = 'none';
+}
+
 $(document).ready(function () {
     $("#more").parent().on("click", "#more", function () {
         $("#more").text("-");
@@ -8,16 +19,6 @@ $(document).ready(function () {
         $("#less").attr("id", "more");
     });
 
-    // Script to open and close sidebar
-    function w3_open() {
-        document.getElementById('mySidebar').style.display = 'block';
-        document.getElementById('myOverlay').style.display = 'block';
-    }
-
-    function w3_close() {
-        document.getElementById('mySidebar').style.display = 'none';
-        document.getElementById('myOverlay').style.display = 'none';
-    }
     $("#«").click(function () {
         $("#projects").html("<div class='w3-third w3-container w3-margin-bottom'><img src='img/Logotipo.png' alt='Image not found!' style='width:100%' class='w3-hover-opacity'><div class='w3-container w3-white'><br><p><b><h5>FoundThat</h5></b></p><p><b>Discipline:</b> Project I</p><p><b>Description:</b>Realization for the field of Technologies and Web Applications, a video that helps in the dissemination of the course on Technologies and Information Systems for the Web, since it is a relatively recent course about which there is not much information yet </p><p><a href='https://github.com/joaorafaelsantos/FoundThat' target='_blank'><i class='fa fa-code w3-hover-opacity'><b> code </b></i></a><a href='https://www.youtube.com/watch?v=sC33nRWhD_Q' target='_blank'> <i class='fa fa-play-circle w3-hover-opacity'><b> video</b></i></a></p><p><b>Group: </b><a href='https://github.com/joaorafaelsantos' target='_blank'>João Santos</a></p><p><b>Final grade:</b> 18/20</p></div></div><div class='w3-third w3-container w3-margin-bottom'> <img src='img/agpuzzle.jpg' alt='Image not found!' style='width:100%' class='w3-hover-opacity'> <div class='w3-container w3-white'><br> <p><b><h5>English Puzzle</h5> </b></p><p><b>Discipline:</b> Graphic Animation</p><p><b>Description:</b> The website in question corresponds to a game that allows the user to understand a little more of the English language by relating the images of the animals to their respective names, which is educational for the youngest. </p><p><a href='https://cdn.rawgit.com/acacmt/Puzzle-Ingl-s/9cab2a1b/Menu.html' target='_blank'><i class='fa fa-link w3-hover-opacity'><b> link</b> </i></a><a href='https://github.com/acacmt/Puzzle-Ingl-s' target='_blank'><i class='fa fa-code w3-hover-opacity'><b> code</b></i></a></p><p><b>Group: </b><a href='https://github.com/acacmt' target='_blank'>Ângela Tavares</a></p> <p><b>Final grade:</b> 17/20</p></div></div><div class='w3-third w3-container'><img src='img/aganim.jpg' alt='Image not found!' style='width:100%' class='w3-hover-opacity'><div class='w3-container w3-white'><br><p><b><h5>Intro ESMAD</h5></b></p><p><b>Discipline:</b> Graphic Animation</p><p><b>Description:</b> The website in question was made based on visual elements in order to impress and captivate users of the platform in order to impact them.</p><p><a href='https://cdn.rawgit.com/acacmt/Intro-Esmad/03593343/ESMAD.html' target='_blank'><i class='fa fa-link w3-hover-opacity'><b> link</b></i></a><a href='https://github.com/acacmt/Intro-Esmad' target='_blank'><i class='fa fa-code w3-hover-opacity'><b> code</b></i></a></p><p><b>Group: </b><a href='https://github.com/acacmt' target='_blank'>Ângela Tavares</a></p><p><b>Final grade:</b> 17/20</p></div></div></div>")
     });
