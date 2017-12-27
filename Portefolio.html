@@ -20,6 +20,27 @@
     h6 {
         font-family: 'Raleway', sans-serif
     }
+    #i,
+    h6 {
+        color: #616E88;
+    }
+
+    #footer,
+    #current,
+    #skill {
+        background-color: #616E88;
+    }
+    #«:hover,
+    #one:hover,
+    #two:hover,
+    #three:hover,
+    #»:hover{
+        background-color: #616E88;
+    }  
+
+    button {
+        background-color: #616E88;
+    }
 </style>
 
 <body class='w3-light-grey w3-content' style='max-width:1600px'>
@@ -29,7 +50,7 @@
         <br>
         <div class='w3-container'>
             <a href='#' onclick='w3_close()' class='w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey' title='close menu'>
-                <i class='fa fa-remove'></i>
+                <i id="i" class='fa fa-remove'></i>
             </a>
             <img src='img/foto.png' alt='Image not found!' style='width:45%;' class='w3-round'>
             <br>
@@ -40,26 +61,26 @@
         </div>
         <div class='w3-bar-block'>
             <a href='#header' onclick='w3_close()' class='w3-bar-item w3-button w3-padding'>
-                <i class='fa fa-th-large fa-fw w3-margin-right'></i>PROJECTS</a>
+                <i id="i" class='fa fa-th-large fa-fw w3-margin-right'></i>PROJECTS</a>
             <a href="CV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding" target="_blank">
-                <i class="fa fa-file-text fa-fw w3-margin-right"></i>CURRICULUM</a>
+                <i id="i" class="fa fa-file-text fa-fw w3-margin-right"></i>CURRICULUM</a>
             <a href='#about' onclick='w3_close()' class='w3-bar-item w3-button w3-padding'>
-                <i class='fa fa-user fa-fw w3-margin-right'></i>ABOUT</a>
+                <i id="i" class='fa fa-user fa-fw w3-margin-right'></i>ABOUT</a>
             <a href='#contact' onclick='w3_close()' class='w3-bar-item w3-button w3-padding'>
-                <i class='fa fa-envelope fa-fw w3-margin-right'></i>CONTACT</a>
+                <i id="i" class='fa fa-envelope fa-fw w3-margin-right'></i>CONTACT</a>
         </div>
         <div class='w3-panel w3-large'>
             <a href='https://www.facebook.com/francisco.moreira.965' target='_blank'>
-                <i class='fa fa-facebook-official w3-hover-opacity'></i>
+                <i id="i" class='fa fa-facebook-official w3-hover-opacity'></i>
             </a>
             <a href='https://www.instagram.com/fdcm32/' target='_blank'>
-                <i class='fa fa-instagram w3-hover-opacity'></i>
+                <i id="i" class='fa fa-instagram w3-hover-opacity'></i>
             </a>
             <a href='https://www.linkedin.com/in/francisco-moreira-1584a5b3/' target='_blank'>
-                <i class='fa fa-linkedin w3-hover-opacity'></i>
+                <i id="i" class='fa fa-linkedin w3-hover-opacity'></i>
             </a>
             <a href='https://github.com/FranciscoMoreira32' target='_blank'>
-                <i class='fa fa-github w3-hover-opacity'></i>
+                <i id="i" class='fa fa-github w3-hover-opacity'></i>
             </a>
         </div>
     </nav>
@@ -172,8 +193,8 @@
                     <p>
                         <b>Discipline:</b> Graphic Animation</p>
                     <p>
-                        <b>Description:</b> The website in question was made based on visual elements in order to impress and
-                        captivate users of the platform in order to impact them.</p>
+                        <b>Description:</b> The website in question was made based on visual elements in order to impress
+                        and captivate users of the platform in order to impact them.</p>
                     <p>
                         <a href='https://cdn.rawgit.com/acacmt/Intro-Esmad/03593343/ESMAD.html' target='_blank'>
                             <i class='fa fa-link w3-hover-opacity'>
@@ -199,19 +220,19 @@
         <!-- Pagination -->
         <div class='w3-center w3-padding-32'>
             <div class='w3-bar'>
-                <a id='«' href='#header' class='w3-bar-item w3-button w3-hover-dark-grey'>
+                <a id='«' href='#header' class='w3-bar-item w3-button '>
                     <b>«</b>
                 </a>
-                <a id='one' href='#header' class='w3-bar-item w3-hover-dark-grey w3-button'>
+                <a id='one' href='#header' class='w3-bar-item w3-button'>
                     <b>1</b>
                 </a>
-                <a id='two' href='#header' class='w3-bar-item w3-button w3-hover-dark-grey'>
+                <a id='two' href='#header' class='w3-bar-item w3-button'>
                     <b>2</b>
                 </a>
-                <a id='three' href='#header' class='w3-bar-item w3-button w3-hover-dark-grey'>
+                <a id='three' href='#header' class='w3-bar-item w3-button '>
                     <b>3</b>
                 </a>
-                <a id='»' href='#header' class='w3-bar-item w3-button w3-hover-dark-grey'>
+                <a id='»' href='#header' class='w3-bar-item w3-button'>
                     <b>»</b>
                 </a>
             </div>
@@ -240,44 +261,51 @@
             </div>
             <br>
             <div>
-                <button id="btn_collapse" type="button" class="btn btn-md btn-default collapsed w3-dark-grey" data-toggle="collapse" data-target="#demo">More information</button>
+                <button id="btn_collapse" type="button" class="btn btn-md  collapsed w3-text-white" data-toggle="collapse" data-target="#demo">More information</button>
             </div>
 
 
             <hr>
 
-            <h4>Technical Skills</h4>
+            <h4>
+                <b>Technical Skills</b>
+            </h4>
+
             <!-- Progress bars / Skills -->
             <b>Programming</b>
             <p>JavaScript</p>
             <div class='w3-light-grey w3-round-xlarge w3-small'>
-                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-dark-grey' style='width:70%'>70%</div>
+                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-text-white' style='width:70%'>70%</div>
             </div>
             <p>JQuery</p>
             <div class='w3-light-grey w3-round-xlarge w3-small'>
-                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-dark-grey' style='width:65%'>65%</div>
+                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-text-white' style='width:65%'>65%</div>
             </div>
             <p>HTML</p>
             <div class='w3-light-grey w3-round-xlarge w3-small'>
-                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-dark-grey' style='width:75%'>75%</div>
+                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-text-white' style='width:75%'>75%</div>
             </div>
             <div id='demo1' class='collapse'>
                 <br>
                 <p>Bootstrap</p>
                 <div class='w3-light-grey w3-round-xlarge w3-small'>
-                    <div id='skill' class='w3-container w3-center w3-round-xlarge w3-dark-grey' style='width:70%'>70%</div>
+                    <div id='skill' class='w3-container w3-center w3-round-xlarge w3-text-white' style='width:70%'>70%</div>
                 </div>
                 <p>#C</p>
                 <div class='w3-light-grey w3-round-xlarge w3-small'>
-                    <div id='skill' class='w3-container w3-center w3-round-xlarge w3-dark-grey' style='width:40%'>40%</div>
+                    <div id='skill' class='w3-container w3-center w3-round-xlarge w3-text-white' style='width:40%'>40%</div>
                 </div>
-                <p>Node JS</p>
+                <p>Node Js/Express</p>
                 <div class='w3-light-grey w3-round-xlarge w3-small'>
-                    <div id='skill' class='w3-container w3-center w3-round-xlarge w3-dark-grey' style='width:50%'>50%</div>
+                    <div id='skill' class='w3-container w3-center w3-round-xlarge w3-text-white' style='width:50%'>50%</div>
+                </div>
+                <p>Ajax</p>
+                <div class='w3-light-grey w3-round-xlarge w3-small'>
+                    <div id='skill' class='w3-container w3-center w3-round-xlarge w3-text-white' style='width:65%'>650%</div>
                 </div>
             </div>
             <br>
-            <button id='more' type='button' class='btn btn-md btn-default collapsed w3-dark-grey' data-toggle='collapse' data-target='#demo1'>+</button>
+            <button id='more' type='button' class='btn btn-md collapsed w3-text-white' data-toggle='collapse' data-target='#demo1'>+</button>
 
 
 
@@ -285,48 +313,45 @@
             <b>Design</b>
             <p>Adobe Photoshop</p>
             <div class='w3-light-grey w3-round-xlarge w3-small'>
-                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-dark-grey' style='width:50%'>50%</div>
+                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-text-white' style='width:50%'>50%</div>
             </div>
             <p>Adobe Illustrator</p>
             <div class='w3-light-grey w3-round-xlarge w3-small'>
-                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-dark-grey' style='width:50%'>50%</div>
+                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-text-white' style='width:50%'>50%</div>
             </div>
             <p>Adobe Premiere</p>
             <div class='w3-light-grey w3-round-xlarge w3-small'>
-                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-dark-grey' style='width:45%'>45%</div>
+                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-text-white' style='width:45%'>45%</div>
             </div>
             <hr>
             <b>Others</b>
             <p>Software Engineering</p>
             <div class='w3-light-grey w3-round-xlarge w3-small'>
-                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-dark-grey' style='width:80%'>80%</div>
+                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-text-white' style='width:80%'>80%</div>
             </div>
             <p>Database (SQL | XML | JSON)</p>
             <div class='w3-light-grey w3-round-xlarge w3-small'>
-                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-dark-grey' style='width:75%'>75%</div>
+                <div id='skill' class='w3-container w3-center w3-round-xlarge w3-text-white' style='width:75%'>75%</div>
             </div>
             <hr>
 
 
             <!-- Contact Section -->
-            <div class='w3-container w3-padding-large w3-grey'>
-                <h4 id='contact'>
-                    <b>Contact Me</b>
-                </h4>
+            <div id="contact" class='w3-container w3-padding-large w3-text-white'>
                 <div class='w3-row-padding w3-center w3-padding-24' style='margin:0 -16px'>
-                    <div class='w3-third w3-dark-grey'>
+                    <div id="footer" class='w3-third w3-text-white'>
                         <p>
                             <i class='fa fa-envelope w3-xxlarge w3-text-light-grey'></i>
                         </p>
                         <p>franciscomoreira1997@gmail.com</p>
                     </div>
-                    <div class='w3-third w3-dark-grey'>
+                    <div id="footer" class='w3-third w3-text-white'>
                         <p>
                             <i class='fa fa-map-marker w3-xxlarge w3-text-light-grey'></i>
                         </p>
                         <p>Famalicão, PT</p>
                     </div>
-                    <div class='w3-third w3-dark-grey'>
+                    <div id="footer" class='w3-third w3-text-white'>
                         <p>
                             <i class='fa fa-phone w3-xxlarge w3-text-light-grey'></i>
                         </p>
@@ -335,7 +360,6 @@
                 </div>
                 <hr class='w3-opacity'>
             </div>
-
         </div>
 
 </body>
